@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   password:'su contraseña',
   database:'asistencia',
   port: 3306,
-  ssl : {
+  ssl : {  ///comenta este arreglo completamente si tu basede datos no utiliza certificado de seguridad
     ssl: true,
 
     cert: fs.readFileSync(__dirname + '/aquielnombredesucertificado.pem'),
